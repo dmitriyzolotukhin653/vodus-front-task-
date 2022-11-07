@@ -1,0 +1,25 @@
+{
+  "name": "vodus_frontend",
+  "version": "1.0.0",
+  "description": "Frontend vodus task",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -w public index.js -e js,html,css",
+    "autoprefix": "postcss public/*.css --use autoprefixer -d build/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "connect-livereload": "^0.6.1",
+    "express": "^4.18.2",
+    "livereload": "^0.9.3",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1"
+  }
+}

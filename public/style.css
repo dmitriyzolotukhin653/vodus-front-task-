@@ -1,0 +1,110 @@
+:root {
+  --primary-color: #8b42f2;
+  --text-color: #fff;
+  --updates-color: #8b42f2;
+  --guides-color: #20b6c6;
+  --learning-color: #fdbf2d;
+  --payments-color: #455469;
+  --news-color: #5250fa;
+}
+
+.header {
+  background-color: var(--primary-color);
+}
+.header .logo-img {
+  vertical-align: center;
+  max-height: 25px;
+}
+.header .navbar .nav-link {
+  color: #eee !important;
+  font-weight: lighter !important;
+}
+.header .navbar .nav-link:hover {
+  color: #fff !important;
+}
+.header .navbar .navbar-toggler {
+  border-color: #fff;
+}
+.header .navbar .navbar-toggler:focus {
+  outline: 5px auto rgba(162, 114, 227, 0.75);
+}
+.header .navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.filter-btn-group {
+  padding: 0 12px;
+}
+
+.filter-btn {
+  margin: 4px 2px;
+  color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: red;
+  cursor: pointer;
+  font-style: italic;
+  font-weight: lighter;
+}
+.filter-btn.active {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.filter-btn.focus {
+  box-shadow: 0 0 0 0.2rem rgba(162, 114, 227, 0.75);
+}
+.filter-btn:hover {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.article-card {
+  min-width: 250px;
+  width: 250px;
+  border-width: 0;
+  margin: 0 16px;
+}
+.article-card .article-card_img {
+  box-shadow: 0 6px 8px -6px black;
+  border-radius: 0;
+}
+.article-card .article-card_topic {
+  position: absolute;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  font-size: 0.8rem;
+  padding: 4px 12px;
+  top: 4%;
+  left: 0;
+  font-weight: lighter;
+}
+.article-card .article-card_text {
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+.article-card .article-card_link {
+  color: var(--primary-color);
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+
+.bg-topic-update {
+  background-color: var(--updates-color) !important;
+}
+.bg-topic-guide {
+  background-color: var(--guides-color) !important;;
+}
+.bg-topic-learning {
+  background-color: var(--learning-color) !important;;
+}
+.bg-topic-payment {
+  background-color: var(--payments-color) !important;;
+}
+.bg-topic-news {
+  background-color: var(--news-color) !important;;
+}
+
+@media (max-width: 991px) {
+  .article-cards-row {
+    justify-content: space-around;
+  }
+}
